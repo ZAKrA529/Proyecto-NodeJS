@@ -1,1 +1,59 @@
-{ "users":[]}
+{
+  "registros": [
+    {
+      "id": "6999",
+      "fullname": "Kevyn Medina Angulo",
+      "email": "dmedina@fwdcostarica.com",
+      "password": "1234"
+    },
+    {
+      "id": "224f",
+      "fullname": "Allan Velez Gomez",
+      "email": "avellez@gmail.com",
+      "password": "098765432"
+    },
+    {
+      "id": "5dbf",
+      "fullname": "Dayana Angulo Ampie",
+      "email": "dangulo@gmail.com",
+      "password": "57656747"
+    },
+    {
+      "id": "505d",
+      "fullname": "Fullname",
+      "email": "dmedina@fwdcostarica.com",
+      "password": "231321"
+    },
+    {
+      "id": "4f48",
+      "fullname": "Josebeth Carranza Molina",
+      "email": "jcarranza@gmal.com",
+      "password": "434665473567"
+    },
+    {
+      "id": "ffa0",
+      "fullname": "pepe medina",
+      "email": "dmedina@fwdcostarica.com",
+      "password": "dddddd"
+    },
+    {
+      "id": "f5ab",
+      "fullname": {
+        "fullname": "pepe",
+        "email": "hola@gmail.com",
+        "password": "1234",
+        "role": "Estudiante"
+      }
+    },
+    {
+      "id": "93a4",
+      "fullname": {
+        "fullname": "dm",
+        "email": "dm@gmail.com",
+        "password": "2345",
+        "role": "Profesor"
+      }
+    }
+  ],
+  "x": []
+}

@@ -1,4 +1,4 @@
-async function getUsers() {
+async function getLogin() {
     try {
         const response = await fetch('http://localhost:3003/registros', {
             method: 'GET',
@@ -22,13 +22,13 @@ async function getUsers() {
 }
 
 
-export { getUsers };
+export { getLogin };
 
 
 //////////LLAMADO POST//////////
 
 
-async function postUsers(fullname, email, password) {
+async function postLogin(fullname, email, password) {
     try {
 
 
@@ -57,7 +57,7 @@ async function postUsers(fullname, email, password) {
 }
 
 
-export { postUsers }
+export { postLogin }
 
 
 //////////////LLAMADO UPDATE/////////////
@@ -65,7 +65,7 @@ export { postUsers }
 
 
 
-async function updateUsers(fullname, email, password, id) {
+async function updatelogin(fullname, email, password, id) {
     try {
 
 
@@ -105,7 +105,7 @@ async function updateUsers(fullname, email, password, id) {
 }
 
 
-export { updateUsers }
+export { updatelogin }
 
 
 
@@ -117,7 +117,7 @@ export { updateUsers }
 
 
 
-async function deleteUser(id) {
+async function deletelogin(id) {
     try {
         const response = await fetch(`http://localhost:3003/registros/${id}`, {
             method: 'DELETE',
@@ -140,4 +140,4 @@ async function deleteUser(id) {
 }
 
 
-export { deleteUser };
+export { deletelogin };
