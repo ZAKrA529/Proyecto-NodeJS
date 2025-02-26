@@ -1,4 +1,4 @@
-async function getUsers() {
+async function getticket() {
     try {
         const response = await fetch('http://localhost:3003/Consultasfront', {
             method: 'GET',
@@ -22,21 +22,18 @@ async function getUsers() {
 }
 
 
-export { getUsers };
+export { getticket };
 
 
 //////////LLAMADO POST//////////
 
 
-async function postUsers(fullname, email, password, role) {
+async function postticket(nombre, email, html, css, js, otro, descripcion) {
     try {
 
 
-        const userData = {
-            fullname,
-            email,
-            password,
-            role
+        const tickedData = {
+            nombre, email, html, css, js, otro, descripcion
         };
 
 
@@ -45,7 +42,7 @@ async function postUsers(fullname, email, password, role) {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(userData)
+            body: JSON.stringify(tickedData)
         });
 
 
@@ -58,7 +55,7 @@ async function postUsers(fullname, email, password, role) {
 }
 
 
-export { postUsers }
+export { postticket }
 
 
 //////////////LLAMADO UPDATE/////////////
@@ -66,15 +63,12 @@ export { postUsers }
 
 
 
-async function updateUsers(fullname, email, password, id) {
+async function updateticket(nombre, email, html, css, js, otro, descripcion) {
     try {
 
 
-        const userData = {
-            fullname,
-            email,
-            password,
-            id
+        const tickedData = {
+            nombre, email, html, css, js, otro, descripcion
         };
 
 
@@ -91,7 +85,7 @@ async function updateUsers(fullname, email, password, id) {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(userData)
+            body: JSON.stringify(tickedData)
         });
 
 
@@ -105,7 +99,7 @@ async function updateUsers(fullname, email, password, id) {
 }
 
 
-export { updateUsers }
+export { updateticket }
 
 
 
@@ -117,7 +111,7 @@ export { updateUsers }
 
 
 
-async function deleteUser(id) {
+async function deleteticket(id) {
     try {
         const response = await fetch(`http://localhost:3003/Consultasfront/${id}`, {
             method: 'DELETE',
@@ -140,4 +134,4 @@ async function deleteUser(id) {
 }
 
 
-export { deleteUser };
+export { deleteticket };
