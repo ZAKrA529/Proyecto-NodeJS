@@ -1,6 +1,6 @@
 async function getUsers() {
     try {
-        const response = await fetch('http://localhost:3003/registros', {
+        const response = await fetch('http://localhost:3003/Consultasfront', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -40,7 +40,7 @@ async function postUsers(fullname, email, password, role) {
         };
 
 
-        const response = await fetch("http://localhost:3003/registros", {
+        const response = await fetch("http://localhost:3003/Consultasfront", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -86,7 +86,7 @@ async function updateUsers(fullname, email, password, id) {
 
 
 
-        const response = await fetch("http://localhost:3003/registros/" + id, {
+        const response = await fetch("http://localhost:3003/Consultasfront/" + id, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -119,7 +119,7 @@ export { updateUsers }
 
 async function deleteUser(id) {
     try {
-        const response = await fetch(`http://localhost:3003/registros/${id}`, {
+        const response = await fetch(`http://localhost:3003/Consultasfront/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'

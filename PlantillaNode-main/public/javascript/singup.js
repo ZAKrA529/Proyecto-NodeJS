@@ -26,12 +26,8 @@ registro.addEventListener("click", async function (e) {
 
     try {
         // Registra el usuario con el rol seleccionado
-        await postUsers({
-            fullname: namevalue,
-            email: emailvalue,
-            password: passwordvalue,
-            role: roleValue // Guardamos el rol en la base de datos
-        });
+        await postUsers(namevalue, emailvalue, passwordvalue, roleValue); // Guardamos el rol en la base de datos
+        
 
         alerta("Éxito!", "Usuario registrado correctamente", "success", "Ok");
 

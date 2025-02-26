@@ -22,7 +22,7 @@ login.addEventListener("click", async function (e) {
         const users = await getLogin();
         console.log("Usuarios obtenidos:", users);
 
-        const userL = users.find(u => u.user === userdata && u.email === email && u.password === password);
+        const userL = users.find(u => u.fullname === userdata && u.email === email && u.password === password);
 
         if (userL) {
             // Guardar datos en sesión con el rol correcto
@@ -34,7 +34,7 @@ login.addEventListener("click", async function (e) {
             }));
 
             // Redirigir según el rol del usuario
-            const redirectPath = userL.role === "Profesor" ? "pagina.html" : "paginas.html";
+            const redirectPath = userL.role === "Profesor" ? "administrador.html" : "pagina.html";
             window.location.href = redirectPath;
 
             alerta("Éxito!", "Inicio de sesión exitoso", "success", "Ok");

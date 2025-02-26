@@ -1,11 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Estudiantes</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-    
+    <!-- Navbar -->
+<header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="info/perfil.html">Perfil</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Herramientas
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../html/info/contacto.html">Contacto</a></li>
+                                <li><a class="dropdown-item" href="../html/info/tardias.html">Tardías</a></li>
+                                <li><a class="dropdown-item" href="./info/consultas.html">Realiza consultas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección de Bienvenida -->
+    <section class="hero">
+        <div class="container">
+            <h1>Bienvenido a tus cursos</h1>
+            <p>Explora y gestiona tus materias fácilmente</p>
+        </div>
+    </section>
+
+    <!-- Sección de Cursos -->
+    <main class="container mt-5">
+        <h2 class="text-center mb-4">Cursos Matriculados</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card course-card shadow-sm">
+                    <img class="card-img-top" src="../img/backend.jpg" alt="Curso de Matemáticas">
+                    <div class="card-body">
+                        <h4 class="card-title">Back-end</h4>
+                        <p class="card-text">Curso avanzado de back-end</p>
+                        <a href="cursos/matematicas.html" class="btn btn-primary">Ir al curso</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curso de ejemplo extra -->
+            <div class="col-md-4">
+                <div class="card course-card shadow-sm">
+                    <img class="card-img-top" src="../img/6a62481b795b7f476e68081a4a288cb0.jpg" alt="Curso de Programación">
+                    <div class="card-body">
+                        <h4 class="card-title">Front-end</h4>
+                        <p class="card-text">Aprende lógica y fundamentos de programación.</p>
+                        <a href="cursos/programacion.html" class="btn btn-primary">Ir al curso</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card course-card shadow-sm">
+                    <img class="card-img-top" src="../img/5d96a151680679cd93a5421c060e9efe.jpg" alt="Curso de Inglés">
+                    <div class="card-body">
+                        <h4 class="card-title">Inglés</h4>
+                        <p class="card-text">Curso para mejorar tu comprensión y habilidades en inglés.</p>
+                        <a href="cursos/ingles.html" class="btn btn-primary">Ir al curso</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Enlace administrativo -->
+    <div class="text-center mt-4">
+        <a href="adiministrador/admin.html" class="btn btn-outline-secondary">Acceso Administrador</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Estudiantes Forward | <a href="info/contacto.html">Contáctanos</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

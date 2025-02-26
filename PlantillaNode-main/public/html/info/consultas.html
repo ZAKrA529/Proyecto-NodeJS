@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Consulta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="card shadow-lg p-4">
+            <h2 class="text-center text-primary mb-4">Formulario de Consulta</h2>
+            <form>
+                <!-- Nombre -->
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ejemplo: Juan Pérez" required>
+                </div>
+
+                <!-- Correo Electrónico -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <!-- Tipo de Consulta -->
+                <div class="mb-3">
+                    <label for="tipoConsulta" class="form-label">Tipo de Consulta</label>
+                    <select class="form-select" id="tipoConsulta" required>
+                        <option selected disabled>Seleccione una opción</option>
+                        <option value="soporte">Algebra básica</option>
+                        <option value="informacion">Ecuaciones diferenciales</option>
+                        <option value="queja">Trigonometría</option>
+                        <option value="otro">Cálculo I</option>
+                    </select>
+                </div>
+
+                <!-- Descripción de la consulta -->
+                <div class="mb-3">
+                    <label for="descripcion" class="form-label">Descripción de la Consulta</label>
+                    <textarea class="form-control" id="descripcion" rows="4" placeholder="Escriba su consulta aquí..." required></textarea>
+                </div>
+
+                <!-- Botón de envío -->
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary w-50">Enviar Consulta</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
